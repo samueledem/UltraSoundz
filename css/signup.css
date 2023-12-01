@@ -1,0 +1,179 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #080b15;
+  width: 100%;
+}
+
+.logo{
+  text-align: center;
+  padding: 1rem;
+  color: darkorange;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+nav{
+  background-color: #080b15;
+  padding: 1rem;
+  box-shadow: 2px 3px 8px black;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav img{
+  width: 10%;
+  height: 10%;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li{
+  list-style: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+}
+
+.produce{
+  padding: 2rem;
+  background: linear-gradient(111deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 42%, rgb(30, 88, 183) 72%, rgb(221, 221, 221) 100%);
+}
+
+.produce .hero2 h1{
+  color: #080b15;
+  text-shadow: 2px 2px 6px rgb(14, 8, 34);
+}
+
+.produce .hero2 img{
+  width: 25%;
+  height: 20%;
+}
+
+@media  screen and (min-width: 350px) and (max-width: 850px){
+  nav{
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul{
+    display: none;
+  }
+  .produce .hero2 img{
+    margin-left: 35%;
+    width: 30%;
+  }
+
+}
+
+@media  screen and (min-width: 850px) and (max-width: 1442px){
+  nav .dropdown{
+    display: none;
+  }
+  nav img{
+    width: 5%;
+  }
+}
+nav ul li a:hover{
+  background-color: white;
+  color: #080b15;
+  border-style: solid;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-color: rgb(0, 49, 128);
+  transition: 0.1s ease-in;
+}
+
+.sign{
+  text-align: center;
+  margin-top: 10%;
+}
+
+form{
+  background: linear-gradient(140deg, #d2732028 -10%, #080b15 25%,  #080b15 42%, #080b15 50%,  #007bcd 700%);;
+  border-radius: 10px;
+  box-shadow: 5px 5px 18px black;
+}
+
+form input{
+  width: 70%;
+  margin: 1rem 0rem;
+  border-style: none;
+  padding: 0.7rem;
+  background-color: #1e222c;
+  border-radius: 10px;
+  letter-spacing: 0.2rem;
+  color: white;
+}
+
+form h2{
+  color: darkorange;
+  padding: 1rem 0rem;
+}
+
+img{
+  width: 20%;
+  border-image-outset: 20%;
+
+  margin-left: 70%;
+}
+
+form button{
+  padding: 0.5rem 1rem;
+  border-radius: 20rem;
+  background-color: darkorange;
+  border-style: none;
+  margin: 0rem 1.5rem;
+}
+
+form .sign-text{
+  color: white;
+  text-align: left;
+  padding: 0rem 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+form .sign-base-text{
+  padding: 0.5rem 1.5rem;
+  margin: 1rem 0rem;
+  font-size: 13px;
+  color: rgb(108, 108, 108);
+  background-color: #1e222c80;
+  border-radius: 0px 0px 10px 10px;
+}
+
+form .logo{
+  padding: 1.7rem 0rem;
+}
+
+@media  screen and (min-width: 350px) and (max-width: 850px){
+  .sign{
+    margin: 15% 4%;
+  }
+}
+
+@media  screen and (min-width: 850px) and (max-width: 1442px){
+  .sign{
+    width: 80%;
+    text-align: center;
+    margin: 10%;
+  }
+  form{
+    /* text-align: center; */
+  }
+}
+
+footer{
+  background-color: black;
+  color: rgb(108, 108, 108);
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-Up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="./css/signup.css">
+  <style>
+    /* Add some basic styling */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 2.4rem;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color: rgb(2, 2, 32);
+    }
+
+    .dropdown-content a:hover {
+        background-color: rgb(2, 2, 32);
+        color: whitesmoke;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .dropbtn {
+        padding: 0.5rem 1rem;
+        background-color: #080b15;
+        color: whitesmoke;
+        border-style: none;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <script>
+      function toggleDropdown() {
+          var dropdown = document.getElementById("myDropdown");
+          if (dropdown.style.display === "block") {
+              dropdown.style.display = "none";
+          } else {
+              dropdown.style.display = "block";
+          }
+      }
+    
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+          if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              for (var i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.style.display === "block") {
+                      openDropdown.style.display = "none";
+                  }
+              }
+          }
+      }
+    </script>
+        <nav>
+          <div class="dropdown">
+            <button onclick="toggleDropdown()" class="dropbtn"><span class="material-symbols-outlined">
+              widgets
+              </span></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html"><span class="material-symbols-outlined">
+                  tv_signin
+                  </span>Home</a>
+                <a href="login-page.html"><span class="material-symbols-outlined">
+                  pattern
+                  </span>Login</a>
+                
+                <a href="index.html"><span class="material-symbols-outlined">
+                  campaign
+                  </span>Ads</a>
+                <a href="index.html"><span class="material-symbols-outlined">
+                  info
+                  </span>About Us</a>
+            </div>
+          </div>
+          <ul>
+            <li><a href="index.html"><span class="material-symbols-outlined">
+              tv_signin
+              </span> Home</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">
+              pattern
+              </span>Login</a></li>
+            
+            <li><a href="#"><span class="material-symbols-outlined">
+              info
+              </span>About Us</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">
+              campaign
+              </span>Ads</a></li>
+          </ul>
+    
+          <div class="logo">UltraSound</div>
+        </nav>
+      </header>
+        <!-- <img src="./images and icons/music-notes.png" alt=""> -->
+      <div class="sign">
+        <div class="form">
+          <form action="">
+            <h2>Sign Up</h2>
+            
+            <h4 class="sign-text">We've partnered with your favourite song hosts to give you the most <br> pleasant playground </h4>
+            <div class="logo">UltraSound</div>
+            <input type="email" name="email" id="email" placeholder="Email" required><br>
+
+            <input type="text" name="username" id="username" placeholder="Username" required><br>
+
+            <input type="password" name="password" id="password" placeholder="Password" required><br><br>
+
+            <button type="submit">Sign Up</button> <br><br><a href="sign-in.html" style="text-decoration: none; color: black;"><div style="background-color: rgb(108, 108, 108); width: fit-content; text-align: center; padding: 0.5rem 1rem; margin-left: 41%; border-radius: 20rem;">Sign In</div></a><br><br><br>
+            <p class="sign-base-text">
+              Just want to stream and download song, You can alway skip the registration process and download your favourite and preffered songs free! <a href="index.html" style="text-decoration: none; color: rgb(0, 162, 255);">Go back</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <div class="logo">UltraSound</div>
+
+      </footer>
+</body>
+</html>

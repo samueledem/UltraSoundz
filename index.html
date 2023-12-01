@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinagorom Music</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="./css/index.css">
+  <style>
+    /* Add some basic styling */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 2.4rem;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color: rgb(2, 2, 32);
+    }
+
+    .dropdown-content a:hover {
+        background-color: rgb(2, 2, 32);
+        color: whitesmoke;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .dropbtn {
+        padding: 0.5rem 1rem;
+        background-color: #080b15;
+        color: whitesmoke;
+        border-style: none;
+    }
+</style>
+</head>
+<body>
+  <header>
+<script>
+  function toggleDropdown() {
+      var dropdown = document.getElementById("myDropdown");
+      if (dropdown.style.display === "block") {
+          dropdown.style.display = "none";
+      } else {
+          dropdown.style.display = "block";
+      }
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          for (var i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.style.display === "block") {
+                  openDropdown.style.display = "none";
+              }
+          }
+      }
+  }
+</script>
+    <nav>
+      <div class="dropdown">
+        <button onclick="toggleDropdown()" class="dropbtn"><span class="material-symbols-outlined">
+          widgets
+          </span></button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="signup.html"><span class="material-symbols-outlined">
+              tv_signin
+              </span>Sign up</a>
+            <a href="login-page.html"><span class="material-symbols-outlined">
+              pattern
+              </span>Login</a>
+            <a href="index.html"><span class="material-symbols-outlined">
+              tv_gen
+              </span>Videos</a>
+            <a href="index.html"><span class="material-symbols-outlined">
+              cloud_upload
+              </span>Upload</a>
+            <a href="index.html"><span class="material-symbols-outlined">
+              campaign
+              </span>Ads</a>
+            <a href="index.html"><span class="material-symbols-outlined">
+              info
+              </span>About Us</a>
+        </div>
+      </div>
+      <ul>
+        <li><a href="signup.html"><span class="material-symbols-outlined">
+          tv_signin
+          </span> Sign Up</a></li>
+        <li><a href="#"><span class="material-symbols-outlined">
+          pattern
+          </span>Login</a></li>
+        <li><a href="#"><span class="material-symbols-outlined">
+          tv_gen
+          </span>Videos</a></li>
+        <li><a href="#"><span class="material-symbols-outlined">
+          cloud_upload
+          </span>Upload</a></li>
+        <li><a href="#"><span class="material-symbols-outlined">
+          info
+          </span>About Us</a></li>
+        <li><a href="#"><span class="material-symbols-outlined">
+          campaign
+          </span>Ads</a></li>
+      </ul>
+
+      <div class="logo">UltraSound</div>
+
+      <img src="./images and icons/record.png" alt="">
+    </nav>
+  </header>
+
+  <div class="search">
+    <form action="">
+      <input type="text" name="search" id="search">
+      <button type="submit"><span class="material-symbols-outlined">
+        search
+        </span></button>
+    </form>
+  </div>
+
+  <div class="container">
+    <img src="./images and icons/music-notes.png" alt="">
+    <div class="hero">
+      <h1>Ever Asked why music is revered as life?</h1>
+    </div>
+    <br><br>
+
+    <div class="normal-text">
+      Stream and download all your favourite <br> high -life music here and most intrestingly, gain credit for uploading your own songs. <br>
+      No extra charges required, no upload stress, Just do your thing!
+    </div><br>
+    <a href="signup.html"><button>Get started -></button></a>
+  </div>
+
+ 
+
+  <div class="container2">
+    <div class="heading">
+      <h3>Hot downloads</h3>
+      <h3 style="color: rgb(0, 49, 128);">Audio</h3>
+    </div>
+    <br>
+
+    <div class="audio">
+      <p>Celestine_Ukwu_-_Uso_Ndu</p><br>
+      <audio controls src="./audios/[Waploaded]_Celestine_Ukwu_-_Uso_Ndu-1542658219.mp3" download>_Celestine_Ukwu_-_Uso_Ndu</audio>
+      <br>
+      <button>Download</button>
+    </div>
+    <br>
+    <div class="audio">
+      <p>_Rex_Lawson_-_Osuala_Oru_Enene</p><br>
+      <audio controls src="./audios/[Waploaded]_Rex_Lawson_-_Osuala_Oru_Enene-1543433924.mp3" download>_Celestine_Ukwu_-_Uso_Ndu</audio>
+      <br>
+      <button>Download</button>
+    </div>
+  </div>
+
+  <div class="produce">
+    <div class="hero2">
+      <img src="./images and icons/music.png" alt="">
+      <h1>You are a malody maker right?</h1>
+    </div>
+    <br>
+    <div class="normal-text">
+      Upload your songs and share with the world with just one click. Here, you songs go wilder than your thoughts.
+      <br><br><button><a href="signup.html"><span class="material-symbols-outlined" style="color: black;">
+        cloud_upload
+        </span></a></button>
+    </div>
+  </div>
+  <footer>
+    <div class="logo">UltraSound</div>
+    
+  </footer>
+</body>
+</html>
